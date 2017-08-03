@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jfsl.edpam.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edpambg"
+        android:src="@drawable/edpambg01"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edpamlogo"
+        android:src="@drawable/edpam_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edpambg"
+        android:layout_alignStart="@+id/edpambg"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="307dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SignUp"
+        android:id="@+id/btnSign"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="153dp"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:onClick="toSignup" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Login"
+        android:id="@+id/btnLogin"
+        android:layout_alignTop="@+id/btnSign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/shape2"
+
+        android:textColor="@android:color/holo_blue_dark"
+        android:onClick="toAccount" />
+</RelativeLayout>
